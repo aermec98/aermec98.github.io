@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Demo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="/static/icon.png" rel="icon">
+
+    <!-- Bootstrap CSS File -->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="/static/style.css" rel="stylesheet">
+
+    <!-- JQuery File -->
+    <script src="/static/lib/jquery/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Clean booth calculation</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+
+    <!-- ********** HEADER ********** -->
+    <div class="intro">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="row mt">
+                    <div class="col-lg-6 col-lg-offset-3 centered">
+                        <h3>Automatically Calculates Demo</h3>
+                        <h5>Hey... with a few exceptions</h5>
+                        <hr>
+                        <p>Bài toán: <br>
+                            Để xây dựng một phòng Clean Booth cần phải có <b>x</b> thanh nhôm kích thước 1m, <b>y</b>
+                            thanh nhôm kích thước 3m và <b>z</b> thanh nhôm kích thước 4m. Hỏi, cần mua tối thiểu bao
+                            nhiêu
+                            thanh
+                            nhôm kích thước 6m để lượng nhôm bị dư thừa trong quá trình cắt ghép là ít nhất? </p>
+                    </div>
+                </div>
+
+                <div class="row mt">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <form role="form">
+                            <div class="form-group">
+                                <table>
+                                    <tr>
+                                        <td class="tdLabel"><label class="label"
+                                                style="color:black; font-size: 15px">Nhập x: </label>
+                                        </td>
+                                        <td><input type="text" name="x" value="" id="input_x" style="width:100px"
+                                                onkeyup="this.value=this.value.replace(/[^\d]/,'')" />
+                                        </td>
+                                        <td class="tdLabel"><label class="label"
+                                                style="color:black; font-size: 15px">Nhập y: </label>
+                                        </td>
+                                        <td><input type="text" name="y" id="input_y" style="width:100px"
+                                                onkeyup="this.value=this.value.replace(/[^\d]/,'')" />
+                                        </td>
+                                        <td class="tdLabel"><label class="label"
+                                                style="color:black; font-size: 15px">Nhập z: </label>
+                                        </td>
+                                        <td><input type="text" name="z" id="input_z" style="width:100px"
+                                                onkeyup="this.value=this.value.replace(/[^\d]/,'')" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="submit">
+                                <button id="btnSubmit" class="correct-spl btn" type="button">
+                                    <span class="submit-btn">Calculate</span>
+                                </button>
+                            </div>
+                        </form>
+                        <hr>
+                        <div id="textOutput">
+                            <!-- +++++ Correction output will be displayed here +++++ -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+    </div>
+    <!-- /intro -->
+
+    <div id="copyrights">
+        <div class="container">
+            <p>
+                &copy; Copyrights <strong>Tung Tien Bui</strong>. All Rights Reserved
+            </p>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="/static/lib/tweenlite/tweenlite.min.js"></script>
+    <script src="/static/lib/tweenlite/easepack.min.js"></script>
+    <script src="/static/lib/tweenlite/init.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="/static/main.js"></script>
+
+</body>
+
+</html>

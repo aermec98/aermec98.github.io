@@ -1,0 +1,224 @@
+/* Import fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  	background-color: #ffffff;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* color: #333; */
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-top: 05px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-transition: background-color .4s linear, color .4s linear;
+  -moz-transition: background-color .4s linear, color .4s linear;
+  -o-transition: background-color .4s linear, color .4s linear;
+  -ms-transition: background-color .4s linear, color .4s linear;
+  transition: background-color .4s linear, color .4s linear;
+  color: #1abc9c;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #696E74;
+}
+
+td {
+  display: block;
+  float: left;
+  padding: 10px 0;
+  margin-right:40px;
+}
+
+td:last-child {
+  margin-right: 0;
+}
+
+/* Bootstrap Modification */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+textarea {
+  /* overflow: hidden; */
+  resize: none;
+}
+
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.navbar-inverse {
+	background-color: #1abc9c;
+	border-color: #16a085;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+/* HEADER CONFIGURATION - CREATED BY CODROPS */
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.intro .large-header {
+  color: black;
+  background-color: white;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.main-tagline {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 18px;
+}
+
+.intro .main-title {
+  text-transform: uppercase;
+  font-size: 42px;
+  letter-spacing: 4px;
+}
+
+.main-title .thin {
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro .main-title {
+    font-size: 30px;
+  }
+}
+
+
+/* Copyrights */
+
+#copyrights {
+  background: #222222;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copyrights p {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#copyrights a {
+  color: #1abc9c;
+}
+
+.credits {
+  color: #999;
+}
+
+
+.btn {
+  text-shadow: 0 -1px 1px rgba(19,65,88,0.8);
+  background-color: #1abc9c;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 #16a085,0 15px 20px rgba(0,0,0,0.35),inset 0 -1px 1px rgba(255,255,255,0.15);
+  background-image: linear-gradient(top, #1abc9c 0%,#19caa7 39%,#18dab3 100%);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1abc9c), color-stop(39%, #19caa7), color-stop(100%, #18dab3));
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
